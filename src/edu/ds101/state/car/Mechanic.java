@@ -1,10 +1,9 @@
 package edu.ds101.state.car;
 
-import edu.ds101.state.car.car_states.CarStateOff;
 
 public class Mechanic {
-	public void fix(Car car) { 
-		car.setState(new CarStateOff());
+	public void fix(ICar car) { 
+		car.restoreState();
 		System.out.println("Mechanic fixed car " + car);
 	}
 }
